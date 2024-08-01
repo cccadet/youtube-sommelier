@@ -1,0 +1,7 @@
+transcript_video:
+  description: >
+    Entrada: {topic}
+    Verifique se na entrada informada existe um vídeo. Se sim, Crie uma transcrição 
+    completa do conteúdo do vídeo. A transcrição deve ser precisa.
+  expected_output: >
+    Uma transcrição do conteúdo do vídeo.

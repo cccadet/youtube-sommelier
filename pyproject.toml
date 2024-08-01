@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "youtube_sommelier"
+version = "0.1.0"
+description = "youtube-sommelier using crewAI"
+authors = ["Cristian C Dos Santos <perestra.ccds@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+crewai = { extras = ["tools"], version = "^0.41.1" }
+langchain_openai = "*"
+ollama = "*"
+youtube-transcript-api = "*"
+langchain_experimental = "*"
+
+[tool.poetry.scripts]
+youtube_sommelier = "youtube_sommelier.main:run"
+train = "youtube_sommelier.main:train"
+replay = "youtube_sommelier.main:replay"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
