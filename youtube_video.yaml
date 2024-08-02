@@ -1,0 +1,25 @@
+app:
+  config:
+    name: 'youtube-sommelier'
+
+vectordb:
+  provider: chroma
+  config:
+    collection_name: 'youtube'
+    dir: youtube
+    allow_reset: true
+
+embedder:
+  provider: ollama
+  config:
+    model: 'nomic-embed-text:v1.5'
+
+chunker:
+  chunk_size: 2000
+  chunk_overlap: 100
+  length_function: 'len'
+
+llm:
+  provider: openai
+  config:
+    model: 'gpt-4o-mini'

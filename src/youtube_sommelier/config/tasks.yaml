@@ -1,7 +1,14 @@
-transcript_video:
+sumarize_video:
   description: >
     Entrada: {topic}
-    Verifique se na entrada informada existe um vídeo. Se sim, Crie uma transcrição 
-    completa do conteúdo do vídeo. A transcrição deve ser precisa.
+    Verifique se na entrada informada existe um vídeo. Se sim, resuma o conteúdo do vídeo
+    em tópicos principais. Com base no retorno do humano, apenas informe o tópico selecionado.
   expected_output: >
-    Uma transcrição do conteúdo do vídeo.
+    Tópico informado pelo humano.
+
+search_video:
+  description: >
+    Entrada: {topic}
+    Pesquise no video onde o topico informado é discutido. 
+  expected_output: >
+    Saída da ferramenta de busca de vídeo.
