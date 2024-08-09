@@ -8,7 +8,7 @@ sumarize_video:
 
 search_video:
   description: >
-    Entrada: {topic}
-    Pesquise no video onde o topico informado é discutido. 
+    Vídeo: {topic}
+    Use a ferramenta "Busca em transcrições"
   expected_output: >
-    Saída da ferramenta de busca de vídeo.
+    Saída da ferramenta "Busca em transcrições".

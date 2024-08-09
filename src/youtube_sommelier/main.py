@@ -12,7 +12,7 @@ def run():
     Run the crew.
     """
     inputs = {
-        'topic': 'AI LLMs'
+        'topic': 'https://www.youtube.com/watch?v=GIXmIAbrHOc'
     }
     YoutubeSommelierCrew().crew().kickoff(inputs=inputs)
 
@@ -22,7 +22,7 @@ def train():
     Train the crew for a given number of iterations.
     """
     inputs = {
-        "topic": "AI LLMs"
+        "topic": "https://www.youtube.com/watch?v=GIXmIAbrHOc"
     }
     try:
         YoutubeSommelierCrew().crew().train(n_iterations=int(sys.argv[1]), inputs=inputs)
